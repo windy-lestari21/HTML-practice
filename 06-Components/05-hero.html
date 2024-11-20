@@ -13,10 +13,9 @@
     <style>
       * {
         margin: 0;
-        padding: 0px;
+        padding: 0;
         box-sizing: border-box;
       }
-
 
       html {
         font-family: "Rubik", sans-serif;
@@ -26,7 +25,19 @@
       .container {
         margin: 0 auto;
         width: 1200px;
-        background-color: red;
+      }
+
+      header {
+        /* background-color: orangered; */
+        height: 100vh;
+        position: relative;
+        background-image: linear-gradient(
+            rgba(34, 34, 34, 0.6),
+            rgba(34, 34, 34, 0.6)
+          ),
+          url(hero.jpg);
+        background-size: cover;
+        color: #fff;
       }
 
       nav {
@@ -34,11 +45,30 @@
         font-weight: 700;
         display: flex;
         justify-content: space-between;
-        background-color: green;
+        padding-top: 32px;
+        /* background-image: linear-gradient(to right, red, blue); */
+        /* background-color: green; */
+      }
+
+      .header-container {
+        width: 1200px;
+        position: absolute;
+        /* in relation to PARENT size */
+        left: 50%;
+        top: 50%;
+        /* in relation to ELEMENT size */
+        transform: translate(-50%, -50%);
+
+        /* background-color: violet; */
+      }
+
+      .header-container-inner {
+        width: 50%;
+        /* background-color: blue; */
       }
 
       h1 {
-        font-size: 51px;
+        font-size: 52px;
         margin-bottom: 32px;
         line-height: 1.05;
       }
@@ -57,7 +87,7 @@
         color: #fff;
         text-decoration: none;
         display: inline-block;
-        padding: 12px 32px;
+        padding: 16px 32px;
         border-radius: 9px;
       }
 
@@ -74,21 +104,24 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="container">
         <div>LOGO</div>
         <div>NAVIGATION</div>
       </nav>
 
-      <div class="container">
-        <h1>A healty meal delivered to your door, every single</h1>
-        <p>
-          The smart 365-days-per-year food subscribtion that will make you eat
-          heakty algain. Tailored to your personal tastes and nutritional needs
-        </p>
-        <a href="#" class="btn">Start eating well</a>
+      <div class="header-container">
+        <div class="header-container-inner">
+          <h1>A healty meal delivered to your door, every single</h1>
+          <p>
+            The smart 365-days-per-year food subscribtion that will make you eat
+            heakty algain. Tailored to your personal tastes and nutritional
+            needs
+          </p>
+          <a href="#" class="btn">Start eating well</a>
+        </div>
       </div>
     </header>
-    <nav class="container">
+
     <section>
       <div class="container">
         <h2>Some random heading</h2>
@@ -102,7 +135,6 @@
           asperiores explicabo eos dolorem quos consequuntur deleniti.
         </p>
       </div>
-    </nav>
     </section>
   </body>
 </html>
