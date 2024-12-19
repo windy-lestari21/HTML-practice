@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(#eceffe, #ced6fb);
+}
+
+.card-wrapper {
+  max-width: 1100px;
+  margin: 0 60px 60px;
+  padding: 20px 10px;
+}
+.card-list .card-item {
+  list-style: none;
+}
+
+.card-list .card-item .card-link {
+  /* user-select: none; */
+  width: 400px;
+  display: block;
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.2s ease;
+}
+
+.card-list .card-link .card-image {
+  width: 100%;
+  aspect-ratio: 12 / 9;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-list .card-link .badge {
+  margin: 16px 0 18px;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  color: #b22485;
+  background: #f7dff5;
+  width: fit-content;
+  border-radius: 50px;
+}
+
+.card-list .card-link .badge.editor {
+  color: #856404;
+  background: #fff3cd;
+}
+
+.card-list .card-link .badge.gamer {
+  color: #205c20;
+  background: #d6f8d6;
+}
+
+.card-list .card-link .badge.developer {
+  color: #5372f0;
+  background: #dde4ff;
+}
+
+.card-list .card-link .badge.marketer {
+  color: #b25a2b;
+  background: #ffe3d2;
+}
+
+.card-list .card-link .card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.card-list .card-link .card-button {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  margin: 30px 0 5px;
+  color: #5372f0;
+  background: none;
+  cursor: pointer;
+  border: 2px solid #5372f0;
+  transform: rotate(-45deg);
+  transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button {
+  color: #fff;
+  background: #5372f0;
+}
+
+/* .card-button {
+  cursor: pointer;
+} */
