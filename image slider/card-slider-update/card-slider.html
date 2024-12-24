@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Slider HTML & CSS</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back_ios"
+    />
+    <link rel="stylesheet" href="slider.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="menu">
+      <div class="container">
+        <p class="subheading">Menu</p>
+        <h2 class="heading-secondary">Makan dan minuman</h2>
+        <!-- MENU BOX -->
+        <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+          <div class="splide__track menu-box">
+            <ul class="splide__list">
+              <li class="splide__item">
+                <div class="splide__slide__container">
+                  <img
+                    class="splide__image"
+                    src="img/gallery/gallery-1.jpg"
+                    alt="beef steak"
+                  />
+                  <div class="form-inline">
+                    <p class="badge">Steak</p>
+                    <a href="#" class="link">Details</a>
+                  </div>
+                  <h2 class="menu-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </h2>
+                  <button class="add-button">Add</button>
+                </div>
+              </li>
+
+              <li class="splide__item">
+                <div class="splide__slide__container">
+                  <img
+                    class="splide__image"
+                    src="img/gallery/gallery-2.jpg"
+                    alt="beef steak"
+                  />
+                  <div class="form-inline">
+                    <p class="badge">Steak</p>
+                    <a href="#" class="link">Details</a>
+                  </div>
+                  <h2 class="menu-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </h2>
+                  <button class="add-button">Add</button>
+                </div>
+              </li>
+
+              <li class="splide__item">
+                <div class="splide__slide__container">
+                  <img
+                    class="splide__image"
+                    src="img/gallery/gallery-3.jpg"
+                    alt="beef steak"
+                  />
+                  <div class="form-inline">
+                    <p class="badge">Steak</p>
+                    <a href="#" class="link">Details</a>
+                  </div>
+                  <h2 class="menu-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </h2>
+                  <button class="add-button">Add</button>
+                </div>
+              </li>
+
+              <li class="splide__item">
+                <div class="splide__slide__container">
+                  <img
+                    class="splide__image"
+                    src="img/gallery/gallery-3.jpg"
+                    alt="beef steak"
+                  />
+                  <div class="form-inline">
+                    <p class="badge">Steak</p>
+                    <a href="#" class="link">Details</a>
+                  </div>
+                  <h2 class="menu-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </h2>
+                  <button class="add-button">Add</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <button class="card-btn material-symbols-outlined">arrow_back_ios</button> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script defer src="slider.js"></script>
+  </body>
+</html>
