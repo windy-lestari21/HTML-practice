@@ -1,19 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
   var splide = new Splide(".splide", {
     type: "loop",
-    perPage: 1,
+    perPage: 2,
+    perMove: 1,
+    gap: "2rem",
   });
 
   splide.mount();
 });
 
-// var splide = new Splide(".splide", {
-//   perPage: 1,
-//   type: "loop",
+// document.addEventListener("DOMContentLoaded", function () {
+//   new Splide(".splide", {
+//     perPage: 2,
+//     breakpoints: {
+//       740: {
+//         perPage: 1,
+//       },
+//     },
+//   }).mount();
 // });
-
-// splide.mount();
-
-// const splide = new Splide(".splide");
-
-// splide.mount();
